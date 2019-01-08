@@ -1,7 +1,7 @@
 #!/bin/bash
 # This script will download and add domains from the rep to whitelist.txt file.
-# Project homepage: https://github.com/Beverdam/whitelist
-# Licence: https://github.com/Beverdam/whitelist/blob/master/LICENSE
+# Project homepage: https://github.com/Beverdam/whitelist-Nederland
+# Licence: https://github.com/Beverdam/whitelist-Nederland/blob/master/LICENSE
 # Created by Anudeep (Slight change by Beverdam)
 #================================================================================
 TICK="[\e[32m ✔ \e[0m]"
@@ -16,7 +16,7 @@ if [ "$(id -u)" != "0" ] ; then
 	exit 2
 fi
 
-curl -sS https://raw.githubusercontent.com/Beverdam/whitelist/master/domains/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
+curl -sS https://raw.githubusercontent.com/Beverdam/whitelist-Nederland/master/domains/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 echo -e " ${TICK} \e[32m Adding to whitelist... \e[0m"
 sleep 0.1
 echo -e " ${TICK} \e[32m Removing duplicates... \e[0m"
@@ -29,6 +29,6 @@ echo -e " ${TICK} \e[32m Pi-hole's gravity updated \e[0m"
 echo -e " ${TICK} \e[32m Done! \e[0m"
 
 
-echo -e " \e[1m  Star me on GitHub, https://github.com/Beverdam/whitelist \e[0m"
+echo -e " \e[1m  Star me on GitHub, https://github.com/Beverdam/whitelist-Nederland \e[0m"
 echo -e " \e[1m  Happy AdBlocking :)\e[0m"
 echo -e "\n\n"
