@@ -4,7 +4,7 @@
        
  Op basis van het goede werk van anudeepND, wilde ik graag een whitelist maken voor veelbezochte Nederlandse sites. Ik heb top top 100 sites gepakt van Nederland. Dit is gedaan op basis van eigen inzicht dus garantie tot aan de deur. Wil je graag een domein laten toevoegen? Wil je een bestaan document laten aanpassen? Maak dan gerust een <a href="https://github.com/Beverdam/whitelist/issues">issue</a> aan.  
 
-Om deze domeinen toe te voegen aan je huidige setup,draai whitelist.sh.
+Om deze domeinen toe te voegen aan je huidige setup, draai whitelist.sh.
 
  <p align="center">
   <img height="430" src="https://raw.githubusercontent.com/anudeepND/whitelist/master/images/run.gif">
