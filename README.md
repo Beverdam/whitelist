@@ -2,71 +2,28 @@
   <img width="550" src="https://raw.githubusercontent.com/anudeepND/whitelist/master/images/logo.png">
 </p>
        
-       
-## Commonly white listed domains for Pi-Hole.     
-          
-A robust collection of commonly white listed websites borrowed from various sources including Pi-Hole subreddit, Pi-Hole forum, Pi-Hole github repository and more!
-Add these domains to your Pi-Hole setup by running a script or manually and make your setup **trouble-free!**
-                
-Want to report a new domain? Want to report exsisting one? Feel free to file an <a href="https://github.com/anudeepND/whitelist/issues">issue</a>.
-         
-         
+ Op basis van het goede werk van anudeepND, wilde ik graag een whitelist maken voor veelbezochte Nederlandse sites. Ik heb top top 100 sites gepakt van Nederland. Dit is gedaan op basis van eigen inzicht dus garantie tot aan de deur. Wil je graag een domein laten toevoegen? Wil je een bestaan document laten aanpassen? Maak dan gerust een <a href="https://github.com/Beverdam/whitelist/issues">issue</a> aan.  
+
+Om deze domeinen toe te voegen aan je huidige setup,draai whitelist.sh.
+
  <p align="center">
   <img height="430" src="https://raw.githubusercontent.com/anudeepND/whitelist/master/images/run.gif">
 </p> 
          
 * * *
-         
-### Main features:
-       
-- The entire repo is curated.
-- New domains are added frequently.
-- Comes with a shell script i.e you can add all domains automatically at an instant.
-- Domains are categorised and are included in 3 different files.
-- If you are a beginner to Pi-Hole, adding these sites resolves many problems. 
-       
-***
-     
-### Description
-       
-The repository has 3 different files containing different domains.      
-       
-***whitelist.txt***       
-This file contain domains that are safe to whitelist i.e it does not contain any tracking or advertising sites. Adding this file fixes many problems like YouTube watch history, videos on news sites and so on...
-        
-***referral-sites.txt***      
-People who use services like Slickdeals and Fatwallet needs a few sites (most of  them are ads) to be whitelisted to work properly. This file contains some analytics and ad serving sites, if you don't know what these services are stay away from this list.
            
-***optional-list.txt***       
-This file contain domains that are needed to be whitelisted depending on the service you use. It may contain some tracking site but sometimes it's necessary to add bad domains to make a few services to work.     
-          
-***
-           
-### Installation and Usage
-         
-***For whitelist.txt***     
-```
-git clone https://github.com/anudeepND/whitelist.git
+### Installatie en gebruik
+
+git clone https://github.com/Beverdam/whitelist.git
 cd whitelist/scripts
 sudo chmod +x whitelist.sh
 sudo ./whitelist.sh
-```
-             
-***For referral-sites.txt***          
-```
-git clone https://github.com/anudeepND/whitelist.git
-cd whitelist/scripts
-sudo chmod +x referral.sh
-sudo ./referral.sh
-```
 
-**Note: You don't have to clone the repo every time you need to update whitelist file. Navigate to `whitelist/scripts` and run it again `sudo ./referral.sh`**
-        
-***For optional-list.txt***     
-You can add it manually depending upon the service you use. 
-          
-***     
-               
+**Je hoeft niet steeds deze repo te clonen om een bijgewerkte whitelist file te krijgen. Ga naar 'whitelist/scripts' en voer 'sudo ./whitelist.sh' uit.
+
+***
+Hieronder een goedkope copy-pasta van de orginele repro over het spotten van advertentie domeinen.
+
 ### How do I determine an ad domain?
          
 ***DNSthingy Assistant***
@@ -95,7 +52,7 @@ For Chrome ctrl+shift+I will land you in Developer tools menu.
              
 ***
         
-### Licence
+### Licentie
 ```
 MIT License
 
